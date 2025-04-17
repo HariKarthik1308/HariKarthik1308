@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organ Donation Registration Form</title>
+    <link rel="stylesheet" href="doner.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Organ Donation Registration Form</h1>
+        
+        <form action="#" method="post">
+            <section class="donor-info">
+                <h2>Donor Information</h2>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+            </section>
+
+            <section class="patient-info">
+                <h2>Patient Information</h2>
+                <div class="form-group">
+                    <label for="patientName">Patient's Full Name:</label>
+                    <input type="text" id="patientName" name="patientName" required>
+                    
+                    <label for="patientAge">Patient's Age:</label>
+                    <input type="number" id="patientAge" name="patientAge" required>
+                    
+                    <label for="medicalHistory">Medical History:</label>
+                    <textarea id="medicalHistory" name="medicalHistory" rows="4"></textarea>
+                </div>
+            </section>
+
+            <section class="donation-consent">
+                <h2>Organ Donation Consent</h2>
+                <div class="form-group">
+                    <label for="organSelect">Select Organ(s) to Donate:</label>
+                    <select id="organSelect" name="organSelect" required>
+                        <option value="">-- Select Organ --</option>
+                        <option value="kidney">Kidney</option>
+                        <option value="liver">Liver</option>
+                        <option value="heart">Heart</option>
+                        <option value="lungs">Lungs</option>
+                        <option value="eyes">Eyes</option>
+                    </select>
+
+                    <div class="consent-checkbox">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label for="consent">I consent to donate my organs as specified above.</label>
+                    </div>
+                </div>
+            </section>
+
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+    </div>
+
+    <div class="owner-info">
+        <h3>Webpage Owner:</h3>
+        <p>Name: Hari N</p>
+        <p>Email: <a href="mailto:hn351751@gmail.com">hn351751@gmail.com</a></p>
+        <p>Phone: 7904811667</p>
+    </div>
+</body>
+</html>
